@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahasa Indonesia - Kunjungan ke Kaohsiung</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #89CFF0, #ffffff);
+      padding: 1.5rem 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    nav a {
+      color: #4a4a4a;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin: 0.3rem;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+      transform: translateY(-2px);
+      color: #2a4e6e;
+    }
+    
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://via.placeholder.com/1920x1080?text=Kaohsiung+City');
+      background-size: cover;
+      background-position: center;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto 3rem;
+      padding: 0 2rem;
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      border: 1px solid #e0e0e0;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(137, 207, 240, 0.2);
+    }
+    
+    .card h2 {
+      color: #5D8AA8;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 10px;
+    }
+    
+    .highlight {
+      background-color: #F0F8FF;
+      border-left: 4px solid #89CFF0;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    
+    .image-gallery img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .image-gallery img:hover {
+      transform: scale(1.03);
+    }
+    
+    ul {
+      padding-left: 2rem;
+      margin: 1rem 0;
+    }
+    
+    li {
+      margin-bottom: 0.5rem;
+    }
+    
+    footer {
+      background: linear-gradient(135deg, #89CFF0, #ffffff);
+      color: #4a4a4a;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      nav a {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+      }
+      
+      .card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="agama.html">Agama</a>
+      <a href="pkn.html">PKN</a>
+      <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+      <a href="bahasainggris.html">Bahasa Inggris</a>
+      <a href="ips.html">Ips</a>
+      <a href="mandarin.html">Mandarin</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Pengalaman di Kaohsiung, Taiwan</h1>
+    <p>Teks Deskriptif tentang Perjalanan Edutrip 2025</p>
+  </section>
+
+  <div class="container">
+    <div class="card">
+      <h2>Mengenal Kota Kaohsiung</h2>
+      <p>Kaohsiung adalah kota terbesar kedua di Taiwan yang terkenal sebagai pusat industri, dan destinasi wisata yang menarik. Terletak di bagian selatan pulau, Kaohsiung memiliki iklim tropis yang hangat sepanjang tahun, menjadikannya tempat yang nyaman untuk dikunjungi. Salah satu daya tarik utamanya adalah Love River.</p>
+      
+      <div class="highlight">
+        "Kaohsiung memiliki banyak makanan khas yang menjadi favorit wisatawan, mulai dari papaya milk yang menyegarkan hingga seafood fresh yang lezat."
+      </div>
+      
+      <p>Kaohsiung memiliki sistem transportasi yang modern dan nyaman, terutama MRT Kaohsiung dengan dua jalur utama (Merah dan Oranye) yang menghubungkan berbagai destinasi wisata. Stasiun MRT Formosa Boulevard terkenal dengan Dome of Light yang spektakuler.</p>
+    </div>
+
+    <div class="card">
+      <h2>Penginapan di Holiday Inn Express</h2>
+      <p>Hotel yang saya menginap selama 3 hari adalah Hotel Holiday Inn Express Kaohsiung yang terletak di No. 129號, Dajhih Rd, Yancheng District. Hotel ini memiliki rating 4.3/5 dan berdiri sejak tahun 2020 dengan 16 lantai dan 93 kamar.</p>
+      
+      <div class="image-gallery">
+        <img src="WhatsApp Image 2025-04-06 at 23.31.09 (2).jpeg" alt="Eksterior Holiday Inn Express">
+      </div>
+      
+      <p>Fasilitas yang ditawarkan hotel ini antara lain:</p>
+      
+      <ul>
+        <li>Kamar dengan AC, TV, dan WiFi</li>
+        <li>Restoran dengan berbagai pilihan makanan</li>
+        <li>Sarapan dengan menu bervariasi</li>
+        <li>Pelayanan yang ramah dan profesional</li>
+        <li>Lokasi strategis dekat Love River</li>
+      </ul>
+      
+      <p>Harga untuk kamar sangat terjangkau dengan NT$3,021 (Rp 1,576,868) per malam. Kamar mandinya bersih dan nyaman dengan perlengkapan lengkap.</p>
+    </div>
+
+    <div class="card">
+      <h2>Tempat Wisata Sekitar</h2>
+      <p>Di sekitar hotel Holiday Inn ini, ada beberapa area publik yang menarik untuk dikunjungi:</p>
+      
+      <ul>
+        <li><strong>Love River</strong>: Sungai indah dengan pemandangan kota</li>
+        <li><strong>King Bag</strong>: Pusat perbelanjaan modern</li>
+        <li><strong>Kaohsiung 228 Peace Memorial Park</strong>: Taman bersejarah</li>
+        <li><strong>Pier 2</strong>: Kawasan seni dan budaya</li>
+        <li><strong>Dome of Light</strong>: Karya seni kaca patri terbesar di dunia</li>
+      </ul>
+      
+      <div class="highlight">
+        "Dome of Light di Stasiun MRT Formosa Boulevard adalah karya seni yang wajib dikunjungi, menggabungkan keindahan seni dengan teknologi modern."
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Refleksi Pembelajaran Bahasa Indonesia</h2>
+      <p>Melalui perjalanan ini, saya belajar banyak tentang penerapan materi Bahasa Indonesia, khususnya dalam menulis teks deskriptif dan teks eksplanasi. Beberapa poin penting yang saya pelajari:</p>
+      
+      <ul>
+        <li>Cara mendeskripsikan tempat dengan detail dan menarik</li>
+        <li>Teknik menulis yang efektif untuk menggambarkan pengalaman</li>
+        <li>Penyusunan paragraf yang kohesif dan koheren</li>
+        <li>Penggunaan kosakata yang bervariasi dan tepat</li>
+        <li>Penerapan kaidah kebahasaan yang baik dan benar</li>
+      </ul>
+      
+      <p>Pengalaman menginap di Holiday Inn Express Kaohsiung memberikan banyak inspirasi untuk menulis. Mulai dari deskripsi fisik hotel, suasana, hingga interaksi dengan staf dan pengunjung lainnya.</p>
+    </div>
+
+    <div class="card">
+      <h2>Kesan dan Pesan</h2>
+      <p>Kesan saya terhadap Hotel Holiday Inn Express Kaohsiung sangat positif. Hotel ini nyaman, bersih, dan memiliki pelayanan yang luar biasa. Makanan yang disajikan bervariasi dan enak, membuat saya tidak bosan selama menginap.</p>
+      
+      <p>Perbandingan dengan hotel lain yang saya kunjungi selama edutrip, seperti Tao Garden di Taoyuan, menunjukkan bahwa Holiday Inn lebih besar (16 lantai) dan memiliki fasilitas yang lebih lengkap.</p>
+      
+      <div class="highlight">
+        "Pelayanan staf yang sabar dan ramah, seperti ketika membantu mengambil kartu sarapan, membuat pengalaman menginap semakin berkesan."
+      </div>
+      
+      <p>Kekurangan kecil yang saya temui adalah dinding kamar yang agak tipis sehingga suara dari kamar sebelah kadang terdengar, serta keset kamar mandi yang perlu diperhatikan kebersihannya.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; Edutrip 2025, Website dibuat oleh [Nama Anda/Kelas]</p>
+  </footer>
+</body>
+</html>

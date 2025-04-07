@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Pembelajaran - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #89CFF0, #ffffff);
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #4a4a4a;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0.3rem;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+            transform: translateY(-2px);
+            color: #2a4e6e;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #89CFF0, #ffffff);
+            color: #4a4a4a;
+            padding: 0.8rem 1.8rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            background: linear-gradient(135deg, #7ab8e0, #ffffff);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            color: #2a4e6e;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        .taiwan-info {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+        
+        .taiwan-info h2 {
+            color: #5D8AA8;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .taiwan-info h3 {
+            color: #5D8AA8;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .taiwan-info p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .subject-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .subject-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(137, 207, 240, 0.2);
+        }
+        
+        .subject-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            background-color: #F0F8FF;
+        }
+        
+        .subject-card-content {
+            padding: 1.5rem;
+        }
+        
+        .subject-card h3 {
+            color: #5D8AA8;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, #89CFF0, #ffffff);
+            color: #4a4a4a;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            nav {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                padding: 0 1rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="agama.html">Agama</a>
+            <a href="pkn.html">PKN</a>
+            <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+            <a href="bahasainggris.html">Bahasa Inggris</a>
+            <a href="mandarin.html">Mandarin</a>
+            <a href="ips.html">IPS</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to The Home Page!</h1>
+        <p>Here are some information about my Taiwan Edutrip</p>
+        <a href="#subjects" class="btn">Click here to see all the lessons:</a>
+    </section>
+
+    <div class="container">
+        <div class="taiwan-info">
+            <h2>About Taiwan</h2>
+            <p>So, if you are wondering or confused you guys might ask, what exactly is Taiwan, what to do in Taiwan, and what did I do in Taiwan? To answer all these questions, I'll briefly explain about the beautiful country Taiwan.</p>
+            
+            <p>Taiwan is situated in the West Pacific between Japan and the Philippines. The total area of Taiwan and its outlying islands is around 36,197 square kilometers with a population of 23.13 million, Taiwan is more populous than three-quarters of the world's nations. The country is mostly known for its vibrant culture, delicious cuisine and thriving economy, with Taipei being its capital. Taipei, the city that is known as the city that never sleeps, has a population of around 8 million people. It's not just about the city that makes it special, but here they also have many cultures, food, historical places, and many more.</p>
+            
+            <h3>Things to Do in Taiwan</h3>
+            <p>Now here are some things to do in Taiwan to make your trip more worth it and fun! First, if you're interested in foods, you should go to street night markets such as Raohe Street Night Market and Ximending Street Night Market. Raohe Street Night Market is more perfect for people who wants to try interesting foods from Taiwan meanwhile Ximending Night Market is more perfect for shopping or gifts to buy from Taiwan.</p>
+        </div>
+
+        <h2 id="subjects">Mata Pelajaran Tersedia</h2>
+        <div class="subjects-grid">
+            <div class="subject-card">
+                <img src="" alt="Agama">
+                <div class="subject-card-content">
+                    <h3>Agama</h3>
+                    <p>Kunjungan gereja dan Community Service</p>
+                    <a href="agama.html" class="btn">Look here 👀</a>
+                </div>
+            </div>
+            
+            <div class="subject-card">
+                <img src="" alt="PKN">
+                <div class="subject-card-content">
+                    <h3>PKN</h3>
+                    <p>Peran Ciang Kai Shek dan National Palace Museum</p>
+                    <a href="pkn.html" class="btn">Look here 👀</a>
+                </div>
+            </div>
+            
+            <div class="subject-card">
+                <img src="" alt="Bahasa Indonesia">
+                <div class="subject-card-content">
+                    <h3>Bahasa Indonesia</h3>
+                    <p>Ulasan Hotel Holiday Inn Express Kaohsiung</p>
+                    <a href="bahasaindonesia.html" class="btn">Look here 👀</a>
+                </div>
+            </div>
+            
+            <div class="subject-card">
+                <img src="" alt="Bahasa Inggris">
+                <div class="subject-card-content">
+                    <h3>Bahasa Inggris</h3>
+                    <p>Mindmap about my travel</p>
+                    <a href="bahasainggris.html" class="btn">Look here 👀</a>
+                </div>
+            </div>
+            
+            <div class="subject-card">
+                <img src="" alt="Mandarin">
+                <div class="subject-card-content">
+                    <h3>Mandarin</h3>
+                    <p>Describing our buddy</p>
+                    <a href="mandarin.html" class="btn">Look here 👀</a>
+                </div>
+            </div>
+            
+            <div class="subject-card">
+                <img src="" alt="IPS">
+                <div class="subject-card-content">
+                    <h3>IPS</h3>
+                    <p>Bentuk - bentuk perabadan di Taiwan</p>
+                    <a href="ips.html" class="btn">Look here 👀</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;Edutrip 2025, Website made my Jane Santoso/8C</p>
+    </footer>
+</body>
+</html>
